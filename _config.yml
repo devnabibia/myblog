@@ -1,0 +1,38 @@
+title: layla's blog ଘ(੭*ˊᵕˋ)੭* ੈ♡‧₊˚
+author: layla
+url: https://devnabibia.github.io/myblog
+description: false
+
+remote_theme: devnabibia/moonwalk
+
+theme_config:
+  appearance: "dark"
+  appearance_toggle: true
+  back_home_text: "cd ~" # customize text for homepage link in post layout
+  date_format: "%d.%m.%Y" # customize how date is formatted
+  show_description: true # show blog description
+  show_navbar: true # show horizontal navbar
+  show_footer: true # show footer links in home page,add in _data/home.yml
+  show_copyright: false # show copyright notice in footer
+  show_projects: false # show projects as cards, add in _data/home.yml
+  show_blog: true # show blog posts added in _posts
+  show_old_projects: false # show old projects as cards, add in _data/home.yml
+  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  home:
+    title_blog: posts
+
+defaults:
+  -
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      permalink: /:categories/:title
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jemoji
